@@ -1,12 +1,14 @@
 import { type NextPage } from "next";
+import Head from "next/head";
 import { Header } from "../components/Header";
-import { Hero } from "../components/Hero";
 
 const HomePage: NextPage = () => {
   return (
     <>
+      <Head>
+        <title>5B - Warehouse Consultant</title>
+      </Head>
       <Header />
-      <Hero />
     </>
   );
 };

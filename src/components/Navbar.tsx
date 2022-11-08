@@ -40,7 +40,7 @@ export const Navbar = () => {
         </button>
 
         <div
-          className={`right-0 top-0 bottom-0 left-1/4 flex flex-col gap-4 border border-5b-yellow bg-neutral-100 bg-opacity-50 p-1 text-lg font-semibold backdrop-blur-sm ${
+          className={`right-0 top-0 bottom-0 left-1/4 flex flex-col gap-4 border border-5b-yellow bg-secondary bg-opacity-80 p-1 text-lg font-semibold backdrop-blur-sm ${
             menuOpen ? `fixed` : `hidden`
           }`}
         >
@@ -73,12 +73,12 @@ export const Navbar = () => {
         </div>
       </nav>
       {/* DesktopMenu */}
-      <nav className="desktop-menu">
+      <nav className="desktop-menu hidden text-lg md:block">
         <ul className={`${!menuOpen ? `flex gap-8` : `hidden`} `}>
           {navItems.map((item) => (
             <>
               <li
-                className="box-border block w-full whitespace-nowrap py-2 capitalize hover:border-b hover:border-b-5b-yellow hover:border-opacity-50 "
+                className="box-border block w-full whitespace-nowrap py-2 capitalize hover:underline hover:decoration-5b-yellow hover:decoration-2 hover:underline-offset-8"
                 key={item.name}
               >
                 {
