@@ -8,25 +8,26 @@ export const Navbar = () => {
   const navItems: { name: string; link: string }[] = [
     {
       name: "Home",
-      link: "/home",
+      link: "/#",
     },
     {
       name: "about us",
-      link: "/about",
+      link: "/#about-us",
     },
     {
       name: "products",
-      link: "/products",
+      link: "/#products",
     },
     {
       name: "contact",
-      link: "/contact",
+      link: "/#contact",
     },
   ];
   //TODO Animation slide when open mobile menu
+  //TODO Better navbar in mobile because of close button
   return (
     <>
-      <nav className="mobile-menu md:hidden">
+      <nav className="mobile-menu z-10 md:hidden">
         {/* Menu for mobile */}
         <button
           type="button"
@@ -79,7 +80,7 @@ export const Navbar = () => {
             <>
               <li
                 className="box-border block w-full whitespace-nowrap py-2 capitalize hover:underline hover:decoration-5b-yellow hover:decoration-2 hover:underline-offset-8"
-                key={item.name}
+                key={item.link}
               >
                 {
                   <Link href={item.link} className="px-4">

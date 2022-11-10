@@ -7,7 +7,10 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    <header className="flex h-screen w-screen flex-col overflow-hidden bg-secondary sm:items-center">
+    <header
+      id="homepage"
+      className="flex w-screen flex-col overflow-hidden bg-secondary py-4 sm:items-center"
+    >
       <div className="flex w-full items-center justify-between p-1 sm:w-[90%] md:w-[80%]">
         <Link href={"/"} className="logo">
           <Image
@@ -18,7 +21,7 @@ export const Header = () => {
         </Link>
         <Navbar />
       </div>
-      <div className="relative w-full overflow-hidden py-1 lg:flex lg:shadow-lg xl:w-[90%]">
+      <div className="relative w-full overflow-hidden py-1  lg:flex lg:rounded-lg xl:w-[90%]">
         <Hero />
       </div>
     </header>
