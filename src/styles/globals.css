@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  section {
+    @apply py-8 odd:bg-white even:bg-secondary;
+  }
+}
 @layer components {
   .cta-primary {
     @apply rounded-xl bg-5b-yellow px-4 py-2 text-sm font-bold capitalize sm:text-base lg:text-lg lg:hover:scale-110 lg:hover:bg-opacity-80 lg:hover:text-white lg:hover:transition-all;
