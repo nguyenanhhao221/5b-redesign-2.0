@@ -15,8 +15,8 @@ export const Navbar = () => {
       link: "/#about-us",
     },
     {
-      name: "products",
-      link: "/#products",
+      name: "services",
+      link: "/#services",
     },
     {
       name: "contact",
@@ -54,32 +54,14 @@ export const Navbar = () => {
             className="hamburger-menu self-end py-1"
             onClick={() => setMenuOpen(!menuOpen)}
           ></button>
-          <ul className={`${menuOpen ? `flex flex-col gap-8` : `hidden`} `}>
+          <ul
+            key="mobile-navigation"
+            className={`${menuOpen ? `flex flex-col gap-8` : `hidden`} `}
+          >
             {navItems.map((item) => (
-              <>
-                <li
-                  className="block w-full border-b border-b-5b-yellow border-opacity-50 py-2 capitalize "
-                  key={item.name}
-                >
-                  {
-                    <Link href={item.link} className="px-4">
-                      {item.name}
-                    </Link>
-                  }
-                </li>
-              </>
-            ))}
-          </ul>
-        </div>
-      </nav>
-      {/* DesktopMenu */}
-      <nav className="desktop-menu hidden text-lg md:block">
-        <ul className={`${!menuOpen ? `flex gap-8` : `hidden`} `}>
-          {navItems.map((item) => (
-            <>
               <li
-                className="box-border block w-full whitespace-nowrap py-2 capitalize hover:underline hover:decoration-5b-yellow hover:decoration-2 hover:underline-offset-8"
-                key={item.link}
+                key={item.name}
+                className="block w-full border-b border-b-5b-yellow border-opacity-50 py-2 capitalize "
               >
                 {
                   <Link href={item.link} className="px-4">
@@ -87,7 +69,27 @@ export const Navbar = () => {
                   </Link>
                 }
               </li>
-            </>
+            ))}
+          </ul>
+        </div>
+      </nav>
+      {/* DesktopMenu */}
+      <nav className="desktop-menu hidden text-lg md:block">
+        <ul
+          key="desktop-navigation"
+          className={`${!menuOpen ? `flex gap-8` : `hidden`} `}
+        >
+          {navItems.map((item) => (
+            <li
+              className="box-border block w-full whitespace-nowrap py-2 capitalize hover:underline hover:decoration-5b-yellow hover:decoration-2 hover:underline-offset-8"
+              key={item.link}
+            >
+              {
+                <Link href={item.link} className="px-4">
+                  {item.name}
+                </Link>
+              }
+            </li>
           ))}
         </ul>
       </nav>
