@@ -1,6 +1,6 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import { About } from "../components/About";
+import { Why5B } from "../components/Why5B";
 import { Header } from "../components/Header";
 import { Services } from "../components/Services/Services";
 
@@ -15,8 +15,8 @@ const HomePage: NextPage = () => {
         <section id="services" className="bg-white py-4">
           <Services />
         </section>
-        <section id="about-us">
-          <About />
+        <section id="why-5b">
+          <Why5B />
         </section>
       </main>
     </>

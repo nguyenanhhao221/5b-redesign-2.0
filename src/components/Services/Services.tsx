@@ -65,7 +65,7 @@ export const Services = () => {
   return (
     <>
       <div className="flex flex-col items-center">
-        <h2 className="section-title text-5b-yellow">Our Services</h2>
+        <h2 className="section-title">Our Services</h2>
         <q className="text-center italic md:text-lg">Be There For You</q>
       </div>
       <div className="2xl:py-12">
@@ -73,7 +73,7 @@ export const Services = () => {
           {serviceMockData.map((service) => (
             <li
               key={service.id}
-              className="group min-w-[80vw] snap-center snap-always overflow-hidden bg-neutral-50 pb-2 shadow-2xl transition-transform last:mr-10 sm:min-w-full sm:place-content-center xl:motion-safe:hover:scale-105"
+              className="group min-w-[80vw] snap-center snap-always overflow-hidden bg-neutral-50 pb-2 shadow-xl transition-transform last:mr-10 sm:min-w-full sm:place-content-center xl:motion-safe:hover:scale-105"
             >
               <ServicesCard service={service} />
             </li>

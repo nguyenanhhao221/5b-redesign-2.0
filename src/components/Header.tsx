@@ -9,7 +9,7 @@ export const Header = () => {
   return (
     <header
       id="homepage"
-      className="flex w-screen flex-col overflow-hidden bg-secondary py-4 sm:items-center"
+      className="flex h-screen w-screen flex-col overflow-hidden bg-secondary py-4 sm:items-center"
     >
       <div className="flex w-full items-center justify-between p-1 sm:w-[90%] md:w-[80%]">
         <Link href={"/"} className="logo">
@@ -21,7 +21,7 @@ export const Header = () => {
         </Link>
         <Navbar />
       </div>
-      <div className="relative w-full overflow-hidden py-1  lg:flex lg:rounded-lg xl:w-[90%]">
+      <div className="flex h-full w-full flex-col-reverse justify-center overflow-hidden py-1 lg:flex-row lg:rounded-lg xl:w-[90%]">
         <Hero />
       </div>
     </header>

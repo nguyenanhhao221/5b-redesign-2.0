@@ -27,21 +27,24 @@ export const Navbar = () => {
   //TODO Better navbar in mobile because of close button
   return (
     <>
-      <nav className="mobile-menu z-10 md:hidden">
+      <nav className="z-10">
         {/* Menu for mobile */}
         <button
           type="button"
           title="Open / Close menu"
-          className="hamburger-menu"
+          className="hamburger-menu relative z-50 md:hidden"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <Bars3Icon
             className={`h-8 w-8 md:hidden ${menuOpen ? `hidden` : `block`}`}
           />
+          <XMarkIcon
+            className={`h-10 w-10 md:hidden ${menuOpen ? `block` : `hidden`}`}
+          />
         </button>
 
         <div
-          className={`right-0 top-0 bottom-0 left-1/4 flex flex-col gap-4 border border-5b-yellow bg-secondary bg-opacity-80 p-1 text-lg font-semibold backdrop-blur-sm ${
+          className={`right-0 top-0 bottom-0 left-1/4 flex flex-col gap-4 border border-5b-yellow bg-white bg-opacity-30 p-1 text-lg font-semibold backdrop-blur-sm ${
             menuOpen ? `fixed` : `hidden`
           }`}
         >
@@ -50,16 +53,12 @@ export const Navbar = () => {
             title="Open / Close menu"
             className="hamburger-menu self-end py-1"
             onClick={() => setMenuOpen(!menuOpen)}
-          >
-            <XMarkIcon
-              className={`h-10 w-10 md:hidden ${menuOpen ? `block` : `hidden`}`}
-            />
-          </button>
+          ></button>
           <ul className={`${menuOpen ? `flex flex-col gap-8` : `hidden`} `}>
             {navItems.map((item) => (
               <>
                 <li
-                  className="box-border block w-full border-b border-b-5b-yellow border-opacity-50 py-2 capitalize "
+                  className="block w-full border-b border-b-5b-yellow border-opacity-50 py-2 capitalize "
                   key={item.name}
                 >
                   {

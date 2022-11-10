@@ -11,7 +11,7 @@
   }
 
   .section-title {
-    @apply decoration-clone py-2 text-center text-base font-bold uppercase tracking-widest underline underline-offset-4 md:text-3xl;
+    @apply decoration-clone py-2 text-center text-2xl font-bold uppercase tracking-widest underline underline-offset-4 md:text-4xl;
   }
   .card-title {
     @apply text-center text-lg font-bold capitalize sm:text-xl;
