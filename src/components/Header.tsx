@@ -9,7 +9,7 @@ export const Header = () => {
   return (
     <header
       id="homepage"
-      className="flex h-screen w-screen flex-col overflow-hidden bg-secondary py-4 sm:items-center"
+      className="flex h-[90vh] w-screen flex-col overflow-hidden bg-secondary py-4 sm:h-screen sm:items-center"
     >
       <div className="flex w-full items-center justify-between p-1 sm:w-[90%] md:w-[80%]">
         <Link href={"/"} className="logo">
