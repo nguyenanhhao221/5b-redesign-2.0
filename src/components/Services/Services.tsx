@@ -19,7 +19,7 @@ export type TService = {
 //TODO replace with real data
 const serviceMockData: TService[] = [
   {
-    id: "claawv0m8000l3b6qklyz0vbz",
+    id: "claawv0m8001l3b6qklyz0vbz",
     image: Service1,
     title: "Warehouse Consultant",
     content:
@@ -54,7 +54,7 @@ const serviceMockData: TService[] = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore commodi dolor, fuga et consectetur dolores? Rerum alias, totam quis sequi iure itaque distinctio, repellat dolorum dolor rem adipisci delectus? Sapiente.",
   },
   {
-    id: "claawvemhm8wqw3b6q2w235251",
+    id: "claawvemhm8wqw3b6q2w235w51",
     image: Service6,
     title: "After-Sales Service",
     content:
@@ -73,7 +73,7 @@ export const Services = () => {
           {serviceMockData.map((service) => (
             <li
               key={service.id}
-              className="group min-w-[80vw] snap-center snap-always overflow-hidden bg-neutral-50 pb-2 shadow-xl transition-transform last:mr-10 sm:min-w-full sm:place-content-center xl:motion-safe:hover:scale-105"
+              className="bg-neutral-50 group min-w-[80vw] snap-center snap-always overflow-hidden pb-2 shadow-xl transition-transform last:mr-10 sm:min-w-full sm:place-content-center xl:motion-safe:hover:scale-105"
             >
               <ServicesCard service={service} />
             </li>

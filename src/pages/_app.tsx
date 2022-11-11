@@ -1,7 +1,14 @@
 import { type AppType } from "next/dist/shared/lib/utils";
 import Head from "next/head";
-
+import { Inter } from "@next/font/google";
 import "../styles/globals.css";
+
+//Font
+// If loading a variable font, you don't need to specify the font weight
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin", "vietnamese"],
+});
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
@@ -26,7 +33,9 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         />
         <link rel="manifest" href="/site.webmanifest"></link>
       </Head>
-      <Component {...pageProps} />
+      <div className={inter.className}>
+        <Component {...pageProps} />
+      </div>
     </>
   );
 };

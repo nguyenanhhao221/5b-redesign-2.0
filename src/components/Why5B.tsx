@@ -46,12 +46,6 @@ export const Why5B = () => {
             <p className="px-1 text-center text-xs font-light text-black sm:text-base lg:px-3">
               {content}
             </p>
-            <Link
-              href="/about"
-              className="text-sm underline decoration-5b-yellow underline-offset-4"
-            >
-              Read More
-            </Link>
           </div>
         ))}
       </div>

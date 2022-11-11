@@ -11,12 +11,16 @@ export const Navbar = () => {
       link: "/#",
     },
     {
-      name: "about us",
-      link: "/#about-us",
+      name: "Why 5B",
+      link: "/#why-5b",
     },
     {
       name: "services",
       link: "/#services",
+    },
+    {
+      name: "testimonial",
+      link: "/#testimonial",
     },
     {
       name: "contact",

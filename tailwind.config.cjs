@@ -1,3 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const { fontFamily } = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
@@ -33,10 +36,21 @@ module.exports = {
         secondary: "#fef5e6",
         third: "#",
       },
+      fontFamily: {
+        sans: ["var(--font-inter)", ...fontFamily.sans],
+      },
     },
   },
   plugins: [
     require("prettier-plugin-tailwindcss"),
     require("@tailwindcss/aspect-ratio"),
+    require("daisyui"),
   ],
+  daisyui: {
+    styled: false,
+    themes: false,
+    base: false,
+    utils: false,
+    logs: false,
+  },
 };

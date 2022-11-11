@@ -33,6 +33,7 @@ export const Hero = () => {
         sizes="100vw"
         alt="warehouse forklift illustration"
         placeholder="blur"
+        priority
       />
     </>
   );
