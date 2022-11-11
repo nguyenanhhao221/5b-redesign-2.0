@@ -8,11 +8,6 @@ import { Partners } from "../components/Partners";
 import { PhoneIcon } from "@heroicons/react/24/solid";
 import { CompanyInfo } from "../components/Footer/CompanyInfo";
 
-//Experimental Edge
-export const config = {
-  runtime: "experimental-edge",
-};
-
 const HomePage: NextPage = () => {
   return (
     <>
