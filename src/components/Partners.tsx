@@ -1,5 +1,5 @@
 import React from "react";
-import TinDatLogo from "../../public/partners/TinDat.png";
+import Stow from "../../public/partners/Stow.jpg";
 import CarerLogo from "../../public/partners/Carer.png";
 import Hormann from "../../public/partners/Hormann.png";
 import Mima from "../../public/partners/Mima.png";
@@ -9,7 +9,7 @@ import type { StaticImageData } from "next/image";
 import Image from "next/image";
 
 const partnersArr: { img: StaticImageData; altText: string }[] = [
-  { img: TinDatLogo, altText: "Tin Dat Racking JSC" },
+  { img: Stow, altText: "Stow Racking" },
   { img: CarerLogo, altText: "Carer Forklifts" },
   { img: Hormann, altText: "Hormann" },
   { img: Mima, altText: "Mima Forklifts" },
