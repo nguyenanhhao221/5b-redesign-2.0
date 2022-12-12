@@ -3,6 +3,7 @@ import Head from "next/head";
 import { Inter } from "@next/font/google";
 import "../styles/globals.css";
 import { MessengerFacebook } from "../components/Facebook/MessengerFacebook";
+import { Analytics } from "@vercel/analytics/react";
 
 //Font
 // If loading a variable font, you don't need to specify the font weight
@@ -37,6 +38,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
       <div className={inter.className}>
         <MessengerFacebook />
         <Component {...pageProps} />
+        <Analytics />
       </div>
     </>
   );
