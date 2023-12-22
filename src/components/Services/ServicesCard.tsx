@@ -10,7 +10,7 @@ type Props = {
 export const ServicesCard = ({ service }: Props) => {
   return (
     <div className="flex h-full flex-col items-center gap-4 overflow-hidden">
-      <div className="aspect-w-3 aspect-h-2 h-auto w-full overflow-hidden shadow-lg sm:aspect-w-4 sm:aspect-h-3 xl:aspect-h-9 xl:aspect-w-14 ">
+      <div className="aspect-h-2 aspect-w-3 h-auto w-full overflow-hidden shadow-lg sm:aspect-h-3 sm:aspect-w-4 xl:aspect-h-9 xl:aspect-w-14 ">
         <Image
           src={service.image}
           alt={service.title}

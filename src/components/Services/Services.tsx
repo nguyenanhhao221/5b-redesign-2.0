@@ -73,7 +73,7 @@ export const Services = () => {
           {serviceMockData.map((service) => (
             <li
               key={service.id}
-              className="bg-neutral-50 group min-w-[80vw] snap-center snap-always overflow-hidden pb-2 shadow-xl transition-transform last:mr-10 sm:min-w-full sm:place-content-center xl:motion-safe:hover:scale-105"
+              className="group min-w-[80vw] snap-center snap-always overflow-hidden bg-neutral-50 pb-2 shadow-xl transition-transform last:mr-10 sm:min-w-full sm:place-content-center xl:motion-safe:hover:scale-105"
             >
               <ServicesCard service={service} />
             </li>

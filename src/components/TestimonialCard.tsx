@@ -27,7 +27,7 @@ export const TestimonialCard = ({ testimonial }: Props) => {
           focusable="false"
           data-prefix="fas"
           data-icon="quote-left"
-          className="inline-block w-6 pr-2 pb-2"
+          className="inline-block w-6 pb-2 pr-2"
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"

@@ -48,7 +48,7 @@ export const Navbar = () => {
         </button>
 
         <div
-          className={`right-0 top-0 bottom-0 left-1/4 flex flex-col gap-4 border border-5b-yellow bg-white bg-opacity-30 p-1 text-lg font-semibold backdrop-blur-sm ${
+          className={`bottom-0 left-1/4 right-0 top-0 flex flex-col gap-4 border border-5b-yellow bg-white bg-opacity-30 p-1 text-lg font-semibold backdrop-blur-sm ${
             menuOpen ? `fixed` : `hidden`
           }`}
         >
