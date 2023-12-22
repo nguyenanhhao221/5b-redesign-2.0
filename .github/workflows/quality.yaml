@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+
+name: Run Quality Check for Code Style
+
+on:
+  push:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  # Label of the container job
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18]
+    steps:
+      # Downloads a copy of the code in your repository before running CI tests
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: Install dev dependencies
+        run: pnpm install --dev
+
+      - name: Run Format Check Script
+        run: pnpm run format:check
+
+
