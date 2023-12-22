@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.1",
-    "@next/font": "^14.0.4",
     "@vercel/analytics": "^1.1.1",
     "daisyui": "^4.4.23",
     "next": "14.0.4",

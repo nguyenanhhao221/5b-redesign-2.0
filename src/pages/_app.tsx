@@ -1,6 +1,6 @@
 import { type AppType } from "next/dist/shared/lib/utils";
 import Head from "next/head";
-import { Inter } from "@next/font/google";
+import { Inter } from "next/font/google";
 import "../styles/globals.css";
 import { MessengerFacebook } from "../components/Facebook/MessengerFacebook";
 import { Analytics } from "@vercel/analytics/react";
