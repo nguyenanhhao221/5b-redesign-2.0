@@ -7,7 +7,7 @@ type Props = {
 };
 export const TestimonialCard = ({ testimonial }: Props) => {
   return (
-    <div className="flex flex-col items-center border border-5b-yellow py-4 shadow-xl">
+    <div className="flex flex-col items-center border border-5b-yellow px-2 py-4 shadow-xl">
       <div className="h-auto w-32 overflow-hidden rounded-full">
         <Image
           className="object-fill object-center"
@@ -37,7 +37,7 @@ export const TestimonialCard = ({ testimonial }: Props) => {
             d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
           ></path>
         </svg>
-        <blockquote className="inline px-2 italic">
+        <blockquote className="mt-2 inline text-sm italic lg:text-base">
           {testimonial.content}
         </blockquote>
       </div>

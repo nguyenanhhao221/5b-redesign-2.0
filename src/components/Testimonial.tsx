@@ -53,7 +53,7 @@ export const Testimonial = () => {
       <p className="text-center text-lg capitalize">
         What our customers are saying
       </p>
-      <ul className="mx-auto flex flex-col gap-8 py-4 lg:grid lg:grid-cols-3 lg:gap-8 xl:max-w-[90%] 2xl:max-w-[70%]">
+      <ul className="mx-auto flex flex-col gap-8 py-4 lg:grid lg:flex-none lg:grid-cols-3 lg:gap-8 xl:max-w-[90%] 2xl:max-w-[70%]">
         {testimonials.map((eachTestimonial) => (
           <li className="" key={eachTestimonial.companyName}>
             <TestimonialCard testimonial={eachTestimonial} />
