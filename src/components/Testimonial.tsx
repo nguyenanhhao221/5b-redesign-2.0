@@ -22,7 +22,7 @@ const testimonials: TTestimonial[] = [
       position: "CEO",
     },
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sint deserunt facilis, illum aspernatur sed ea ab ducimus nostrum",
+      "Working with 5B was a game-changer for our warehouse. Their expertise and dedication to excellence transformed our operations, and their forklift trucks are a testament to quality and performance.",
     logo: GalupLogo,
   },
   {
@@ -32,7 +32,7 @@ const testimonials: TTestimonial[] = [
       position: "CEO",
     },
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sint deserunt facilis, illum aspernatur sed ea ab ducimus nostrum",
+      "Impressed with the professionalism and affordability at 5B. The racking system we implemented exceeded our expectations, optimizing our storage space and enhancing overall efficiency",
     logo: TinDatLogo,
   },
   {
@@ -42,7 +42,7 @@ const testimonials: TTestimonial[] = [
       position: "CEO",
     },
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sint deserunt facilis, illum aspernatur sed ea ab ducimus nostrum",
+      "Choosing 5B for hydraulic components was a wise decision. Their products not only met our technical requirements but also came with exceptional after-sales service. Fast and reliable – truly a standout experience.",
     logo: TGILogo,
   },
 ];
