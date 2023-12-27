@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import type { TTestimonial } from "./Testimonial";
+import type { TTestimonial } from "@/components/Testimonial";
 
 type Props = {
   testimonial: TTestimonial;

@@ -1,9 +1,9 @@
 import type { StaticImageData } from "next/image";
 import React from "react";
-import GalupLogo from "../../public/testimonial/Galup.png";
-import TGILogo from "../../public/testimonial/TGI.png";
-import TinDatLogo from "../../public/testimonial/TinDat.png";
-import { TestimonialCard } from "./TestimonialCard";
+import GalupLogo from "/public/testimonial/Galup.png";
+import TGILogo from "/public/testimonial/TGI.png";
+import TinDatLogo from "/public/testimonial/TinDat.png";
+import { TestimonialCard } from "@/components/TestimonialCard";
 
 export type TTestimonial = {
   companyName: string;
