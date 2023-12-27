@@ -49,7 +49,7 @@ const HomePage: NextPage = () => {
       <footer className="flex flex-col items-start gap-4 border-t bg-secondary py-4">
         <CompanyInfo />
         <div className="mx-auto flex flex-col items-center gap-4">
-          <div className="text-sm">Copyright © 2022 5B JSC</div>
+          <div className="text-sm">Copyright © 2024 5B JSC</div>
         </div>
       </footer>
     </>
