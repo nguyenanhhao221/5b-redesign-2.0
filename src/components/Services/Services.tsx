@@ -7,7 +7,7 @@ import Service4 from "/public/services/racking-system.jpg";
 import Service5 from "/public/services/topmain03l.jpg";
 import Service6 from "/public/services/Service-technician-working.png";
 
-import { ServicesCard } from "./ServicesCard";
+import { ServicesCard } from "@/components/Services/ServicesCard";
 
 export type TService = {
   id: string;
