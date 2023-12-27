@@ -22,6 +22,6 @@
     @apply text-center text-lg font-bold capitalize sm:text-xl;
   }
   .card-description {
-    @apply text-center text-sm font-light text-black sm:text-base;
+    @apply text-center text-sm text-black sm:text-base;
   }
 }

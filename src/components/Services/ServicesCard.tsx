@@ -26,7 +26,7 @@ export const ServicesCard = ({ service }: Props) => {
                 ? service.subTitle
                 : ""}
             </h4>
-            <p className="card-description text-left">{service.content}</p>
+            <p className="card-description">{service.content}</p>
           </div>
           <div className="w-full">
             <button
