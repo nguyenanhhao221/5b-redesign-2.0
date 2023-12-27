@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import { Navbar } from "./Navbar";
-import LogoSVG from "../../public/logo-5B-color.svg";
-import { Hero } from "./Hero";
+import { Navbar } from "@/components/Navbar";
+import LogoSVG from "/public/logo-5B-color.svg";
+import { Hero } from "@/components/Hero";
 import Link from "next/link";
 
 export const Header = () => {

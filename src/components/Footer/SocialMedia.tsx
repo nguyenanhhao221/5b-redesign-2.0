@@ -1,10 +1,10 @@
 import React from "react";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { ImYoutube2 } from "react-icons/im";
-//TODO Replace with real data
+
 export const SocialMedia = () => {
   return (
-    <div className="flex flex-col items-start justify-start gap-2 sm:justify-center">
+    <div className="flex flex-col items-center justify-start gap-2 sm:justify-center">
       <ul className="social-medias flex items-center justify-center gap-2">
         <li className="cursor-pointer">
           <a

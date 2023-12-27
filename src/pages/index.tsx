@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Why5B } from "../components/Why5B";
-import { Header } from "../components/Header";
-import { Services } from "../components/Services/Services";
-import { Testimonial } from "../components/Testimonial";
-import { Partners } from "../components/Partners";
+import { Why5B } from "@/components/Why5B";
+import { Header } from "@/components/Header";
+import { Services } from "@/components/Services/Services";
+import { Testimonial } from "@/components/Testimonial";
+import { Partners } from "@/components/Partners";
 import { PhoneIcon } from "@heroicons/react/24/solid";
-import { CompanyInfo } from "../components/Footer/CompanyInfo";
+import { CompanyInfo } from "@/components/Footer/CompanyInfo";
 
 const HomePage: NextPage = () => {
   return (
@@ -49,7 +49,7 @@ const HomePage: NextPage = () => {
       <footer className="flex flex-col items-start gap-4 border-t bg-secondary py-4">
         <CompanyInfo />
         <div className="mx-auto flex flex-col items-center gap-4">
-          <div className="text-sm">Copyright © 2022 5B JSC</div>
+          <div className="text-sm">Copyright © 2024 5B JSC</div>
         </div>
       </footer>
     </>

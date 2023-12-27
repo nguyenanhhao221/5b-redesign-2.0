@@ -14,27 +14,26 @@ export const Why5B = () => {
     {
       title: "Professional Consultant",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sint deserunt facilis, illum aspernatur sed ea ab ducimus nostrum,",
+        "Guided by industry experts, our professional consultants bring strategic insight to optimize your warehouse operations, ensuring long-term success.",
       Icon: <PresentationChartLineIcon className="fill-5b-yellow" />,
     },
     {
       title: "Affordable Price",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sint deserunt facilis, illum aspernatur sed ea ab ducimus nostrum",
+        "At 5B, excellence doesn't come with a hefty price tag. Discover budget-friendly solutions without compromising on quality or performance.",
       Icon: <CurrencyDollarIcon className="fill-5b-yellow" />,
     },
     {
       title: "Fast Service",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sint deserunt facilis, illum aspernatur sed ea ab ducimus nostrum",
+        "Time is of the essence. Benefit from our swift service, ensuring prompt solutions and quick turnaround times to keep your operations running seamlessly.",
       Icon: <RocketLaunchIcon className="fill-5b-yellow" />,
     },
   ];
   return (
     <>
       <h2 className="section-title">Why 5B ?</h2>
-      <div className="mx-auto flex flex-col items-center gap-4 p-2 md:place-content-center md:px-10 lg:grid lg:grid-cols-3 lg:place-content-center lg:gap-8 xl:max-w-[90%] xl:px-4 2xl:max-w-[70%]">
-        {/* Should be card */}
+      <div className="mx-auto flex flex-col gap-4 p-2 md:place-content-center md:px-10 lg:grid lg:flex-none lg:grid-cols-3 lg:gap-8 xl:max-w-[90%] xl:px-4 2xl:max-w-[70%]">
         {aboutContent.map(({ title, content, Icon }) => (
           <div
             key={title}

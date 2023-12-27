@@ -1,10 +1,10 @@
 import React from "react";
-import Stow from "../../public/partners/Stow.jpg";
-import CarerLogo from "../../public/partners/Carer.png";
-import Hormann from "../../public/partners/Hormann.png";
-import Mima from "../../public/partners/Mima.png";
-import Zowell from "../../public/partners/Zowell.png";
-import CKD from "../../public/partners/CKD.png";
+import Stow from "/public/partners/Stow.jpg";
+import CarerLogo from "/public/partners/Carer.png";
+import Hormann from "/public/partners/Hormann.png";
+import Mima from "/public/partners/Mima.png";
+import Zowell from "/public/partners/Zowell.png";
+import CKD from "/public/partners/CKD.png";
 import type { StaticImageData } from "next/image";
 import Image from "next/image";
 

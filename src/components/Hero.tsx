@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import HeroImage from "../../public/hero/2.webp";
+import HeroImage from "/public/hero/2.webp";
 
 export const Hero = () => {
   return (
@@ -10,10 +10,12 @@ export const Hero = () => {
         <h1 className="text-3xl font-extrabold uppercase tracking-widest text-5b-yellow sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
           Modern Warehouse Consultant
         </h1>
-        <p className="text-sm sm:text-base md:text-lg lg:text-black">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus,
-          recusandae placeat odit officiis in voluptatibus laborum culpa maxime
-          exercitationem ipsam libero maiores corrupti
+        <p className="text-sm font-medium sm:text-base md:text-lg lg:text-black">
+          Discover Efficiency.
+          <br />
+          Embrace Innovation.
+          <br />
+          Achieve Success.
         </p>
         <div className="flex items-center justify-center gap-4">
           <button type="button" className="cta-primary relative flex">
