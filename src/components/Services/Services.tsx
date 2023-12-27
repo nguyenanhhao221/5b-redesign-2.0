@@ -1,11 +1,11 @@
 import type { StaticImageData } from "next/image";
 import React from "react";
-import Service1 from "../../../public/services/service1.webp";
-import Service2 from "../../../public/services/Forklift-trucks-ranges.jpg";
-import Service3 from "../../../public/services/warehouse-equipment.jpg";
-import Service4 from "../../../public/services/racking-system.jpg";
-import Service5 from "../../../public/services/topmain03l.jpg";
-import Service6 from "../../../public/services/Service-technician-working.png";
+import Service1 from "/public/services/service1.webp";
+import Service2 from "/public/services/Forklift-trucks-ranges.jpg";
+import Service3 from "/public/services/warehouse-equipment.jpg";
+import Service4 from "/public/services/racking-system.jpg";
+import Service5 from "/public/services/topmain03l.jpg";
+import Service6 from "/public/services/Service-technician-working.png";
 
 import { ServicesCard } from "./ServicesCard";
 
