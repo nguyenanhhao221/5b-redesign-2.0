@@ -16,7 +16,7 @@ export type TService = {
   subTitle?: string;
   content: string;
 };
-//TODO replace with real data
+//TODO: replace with real data
 const serviceMockData: TService[] = [
   {
     id: "claawv0m8001l3b6qklyz0vbz",
