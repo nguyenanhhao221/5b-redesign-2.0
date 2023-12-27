@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import HeroImage from "../../public/hero/2.webp";
+import HeroImage from "/public/hero/2.webp";
 
 export const Hero = () => {
   return (
