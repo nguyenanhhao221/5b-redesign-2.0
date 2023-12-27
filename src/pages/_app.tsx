@@ -1,15 +1,15 @@
 import { type AppType } from "next/dist/shared/lib/utils";
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import "../styles/globals.css";
-import { MessengerFacebook } from "../components/Facebook/MessengerFacebook";
+import "@/styles/globals.css";
+import { MessengerFacebook } from "@/components/Facebook/MessengerFacebook";
 import { Analytics } from "@vercel/analytics/react";
 
 //Font
 // If loading a variable font, you don't need to specify the font weight
 const inter = Inter({
   variable: "--font-inter",
-  subsets: ["latin", "vietnamese"],
+  subsets: ["latin"],
 });
 
 const MyApp: AppType = ({ Component, pageProps }) => {
