@@ -9,7 +9,7 @@
 }
 @layer components {
   .cta-primary {
-    @apply rounded-xl bg-5b-yellow px-4 py-2 text-sm font-bold capitalize sm:text-base lg:text-lg lg:hover:scale-110 lg:hover:bg-opacity-80 lg:hover:text-white lg:hover:transition-all;
+    @apply rounded-xl bg-5b-yellow px-4 py-2 text-sm font-bold capitalize sm:text-base lg:text-lg lg:hover:scale-110 lg:hover:bg-opacity-80 lg:hover:text-white lg:hover:transition-all lg:group-hover:scale-110 lg:group-hover:bg-opacity-80 lg:group-hover:text-white lg:group-hover:transition-all;
   }
   .cta-secondary {
     @apply rounded-xl border border-5b-yellow bg-transparent px-4 py-2 text-sm capitalize text-white hover:bg-5b-yellow hover:text-black hover:transition-all sm:text-base lg:text-lg lg:text-black lg:hover:scale-110 lg:hover:text-white;
