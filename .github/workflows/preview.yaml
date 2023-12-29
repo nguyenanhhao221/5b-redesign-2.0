@@ -6,10 +6,12 @@ env:
 on:
   workflow_run:
     workflows: [ "Quality" ]
-    pull_request:
-        types:
-          - opened
-          - synchronize
+    types:
+      - "completed"
+  pull_request:
+    types:
+      - opened
+      - synchronize
     branches-ignore:
       - main
 jobs:
