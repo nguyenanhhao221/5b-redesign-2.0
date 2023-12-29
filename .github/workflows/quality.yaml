@@ -9,11 +9,12 @@ on:
 
 jobs:
   # Label of the container job
-  install_node_pnpm:
+  setup-node-pnpm:
     uses: ./.github/workflows/install_node_pnpm.yaml
 
   quality:
     runs-on: ubuntu-latest
+    needs: setup-node-pnpm
     name: Format Check Prettier
     steps:
       # Downloads a copy of the code in your repository before running CI tests
