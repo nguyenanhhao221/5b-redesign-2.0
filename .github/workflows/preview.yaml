@@ -4,10 +4,10 @@ env:
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 on:
-  # workflow_run:
-  #   workflows: [ "Quality" ]
-  #   types:
-  #     - "completed"
+  workflow_run:
+    workflows: [ "Quality" ]
+    types:
+      - "completed"
   pull_request:
     types:
       - opened
