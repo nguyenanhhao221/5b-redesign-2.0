@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
 
-name: Run Quality Check for Code Style
+name: Quality
 
 on:
   push:
