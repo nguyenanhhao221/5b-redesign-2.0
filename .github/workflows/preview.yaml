@@ -21,6 +21,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v2
+        with:
+            version: ${{vars.PNPM_VERSION}}
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+            node-version: ${{vars.NODE_VERSION}}
+
       - name: Install Vercel CLI
         run: pnpm install --global vercel@latest
 
