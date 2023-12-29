@@ -9,6 +9,9 @@ on:
 
 jobs:
   # Label of the container job
+  install_node_pnpm:
+    uses: ./.github/workflows/install_node_pnpm.yaml
+
   quality:
     runs-on: ubuntu-latest
     name: Format Check Prettier
@@ -16,9 +19,6 @@ jobs:
       # Downloads a copy of the code in your repository before running CI tests
       - name: Check out repository code
         uses: actions/checkout@v4
-
-      - name: Set up Node and Pnpm
-        uses: ./.github/workflows/install_node_pnpm.yaml
 
       - name: Install dev dependencies
         run: pnpm install --dev
