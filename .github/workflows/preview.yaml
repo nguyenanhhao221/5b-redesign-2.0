@@ -12,7 +12,7 @@ on:
     types:
       - opened
       - synchronize
-    branches-ignore:
+    branches:
       - main
 jobs:
   Setup-Node-Pnpm:
