@@ -12,8 +12,6 @@ on:
     types:
       - opened
       - synchronize
-    branches:
-      - main
 jobs:
   Deploy-Preview:
     runs-on: ubuntu-latest
