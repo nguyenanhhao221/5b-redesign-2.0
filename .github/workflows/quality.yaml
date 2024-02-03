@@ -1,31 +1,31 @@
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
 
-name: Run Quality Check for Code Style
+name: Quality
 
 on:
   push:
   pull_request:
-    branches: [ "main" ]
+    types:
+      - opened
+      - synchronize
 
 jobs:
-  # Label of the container job
   quality:
     runs-on: ubuntu-latest
     name: Format Check Prettier
     steps:
       # Downloads a copy of the code in your repository before running CI tests
-      - name: Check out repository code
-        uses: actions/checkout@v4
-
+      - uses: actions/checkout@v4
       - name: Set up pnpm
         uses: pnpm/action-setup@v2
         with:
-            version: 8
-
+            version: ${{vars.PNPM_VERSION}}
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-            node-version: 18
+            node-version: ${{vars.NODE_VERSION}}
+      - name: Check out repository code
+        uses: actions/checkout@v4
 
       - name: Install dev dependencies
         run: pnpm install --dev
